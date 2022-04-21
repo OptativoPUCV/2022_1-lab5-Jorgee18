@@ -17,7 +17,7 @@ struct TreeMap {
   TreeNode * root;
   TreeNode * current;
   int (*lower_than) (void* key1, void* key2);
-};
+}
 
 int is_equal(TreeMap* tree, void* key1, void* key2){
   if(tree->lower_than(key1,key2)==0 &&  
@@ -87,6 +87,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
 
 TreeNode * minimum(TreeNode * x)
 {
+  /*
   TreeNode* aux;
   aux = x->parent;
   if(x->left == NULL)
@@ -96,7 +97,7 @@ TreeNode * minimum(TreeNode * x)
   {
     aux = aux->left;
   }
-  return aux;
+  return aux;*/
   return NULL;
 
 }
