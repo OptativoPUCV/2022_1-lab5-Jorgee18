@@ -206,3 +206,14 @@ treemap.c:94:12: error: comparison of distinct pointer types lacks a cast [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 1adb74a
+Thu Apr 21 17:49:33 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:94:12: error: comparison of distinct pointer types lacks a cast [-Werror]
+     if(key < aux->parent)
+            ^
+cc1: all warnings being treated as errors
+Compilation failed
+1649024
