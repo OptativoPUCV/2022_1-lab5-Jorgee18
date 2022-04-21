@@ -55,10 +55,9 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
   TreeNode* variableAux2;
   
   variableAux = searchTreeMap(tree, key);
-  variableAux2 = createTreeNode(varaiableAux->key, variableAux->value);
-  return variableAux2;
-  
+  variableAux2 = createTreeNode(key, value);
 
+  tree->variableAux->current = variableAux2;
 }
 
 TreeNode * minimum(TreeNode * x){
