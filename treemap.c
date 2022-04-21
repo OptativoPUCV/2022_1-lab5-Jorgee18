@@ -83,22 +83,17 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
   TreeNode* aux;
   aux = tree->root;
 
-  if(aux == NULL)
-    return NULL;
+
+  if(aux->left == key)
+  {
+    tree->current = aux->left;
+    return aux->left->pair;
+  }
   else
   {
-    if(aux->left == key)
-    {
-      tree->current = aux->left;
-      return aux->left->pair;
-    }
-    else
-    {
-      tree->current = aux->right;
-      return aux->right->pair;
-    }
+    tree->current = aux->right;
+    return aux->right->pair;
   }
-
   return NULL;
 }
 
