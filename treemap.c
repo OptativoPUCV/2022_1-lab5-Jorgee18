@@ -179,7 +179,6 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
   variableAux2 = createTreeNode(key, value);
 
   tree->variableAux->current = variableAux2;
-  return tree;
 
 }
 
