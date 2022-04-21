@@ -4,3 +4,28 @@ Thu Apr 21 17:11:49 UTC 2022:
  tests:  4|7
 total_score: 5/70
 4f88c07
+Thu Apr 21 17:22:56 UTC 2022: 
+ treemap.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:84:7: error: incompatible types when assigning to type ‘TreeNode {aka struct TreeNode}’ from type ‘TreeNode * {aka struct TreeNode *}’
+   aux = tree->root;
+       ^
+treemap.c:86:9: error: invalid type argument of ‘->’ (have ‘TreeNode {aka struct TreeNode}’)
+   if(aux->key == key)
+         ^~
+treemap.c:87:15: error: invalid type argument of ‘->’ (have ‘TreeNode {aka struct TreeNode}’)
+     return aux->key;
+               ^~
+treemap.c:90:11: error: invalid type argument of ‘->’ (have ‘TreeNode {aka struct TreeNode}’)
+     if(aux->key > key)
+           ^~
+treemap.c:91:17: error: invalid type argument of ‘->’ (have ‘TreeNode {aka struct TreeNode}’)
+       return aux->right;
+                 ^~
+treemap.c:93:19: error: invalid type argument of ‘->’ (have ‘TreeNode {aka struct TreeNode}’)
+         return aux->left;
+                   ^~
+Compilation failed
+d1b51c8
