@@ -217,3 +217,18 @@ treemap.c:94:12: error: comparison of distinct pointer types lacks a cast [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 1649024
+Thu Apr 21 18:01:03 UTC 2022: 
+ treemap.c | 22 +++++++++-------------
+ 1 file changed, 9 insertions(+), 13 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:93:47: error: comparison between pointer and integer [-Werror]
+       if(tree->lower_than(aux->pair->key, key == 1))
+                                               ^~
+treemap.c:93:43: error: passing argument 2 of ‘tree->lower_than’ makes pointer from integer without a cast [-Werror=int-conversion]
+       if(tree->lower_than(aux->pair->key, key == 1))
+                                           ^~~
+treemap.c:93:43: note: expected ‘void *’ but argument is of type ‘int’
+cc1: all warnings being treated as errors
+Compilation failed
+b2e5333
