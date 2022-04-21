@@ -238,3 +238,68 @@ Thu Apr 21 18:01:26 UTC 2022:
  tests:  11|6
 total_score: 15/70
 e7cf84d
+Thu Apr 21 18:09:53 UTC 2022: 
+ treemap.c | 126 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 126 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:58:33: error: ‘varaiableAux’ undeclared (first use in this function); did you mean ‘variableAux’?
+   variableAux2 = createTreeNode(varaiableAux->key, variableAux->value);
+                                 ^~~~~~~~~~~~
+                                 variableAux
+treemap.c:58:33: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:59:10: error: ‘return’ with a value, in function returning void [-Werror]
+   return variableAux2;
+          ^~~~~~~~~~~~
+treemap.c:52:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value)
+      ^~~~~~~~~~~~~
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:179:33: error: ‘varaiableAux’ undeclared (first use in this function); did you mean ‘variableAux’?
+   variableAux2 = createTreeNode(varaiableAux->key, variableAux->value);
+                                 ^~~~~~~~~~~~
+                                 variableAux
+treemap.c:180:10: error: ‘return’ with a value, in function returning void [-Werror]
+   return variableAux2;
+          ^~~~~~~~~~~~
+treemap.c:173:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value)
+      ^~~~~~~~~~~~~
+test.c: In function ‘createTreeMap’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+test.c: In function ‘createTreeMap’:
+test.c:606:1: error: expected declaration or statement at end of input
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+In file included from test.c:4:0:
+treemap.c:143:5: error: ‘is_equal’ defined but not used [-Werror=unused-function]
+ int is_equal(TreeMap* tree, void* key1, void* key2){
+     ^~~~~~~~
+treemap.c:119:8: error: ‘nextTreeMap’ defined but not used [-Werror=unused-function]
+ Pair * nextTreeMap(TreeMap * tree) {
+        ^~~~~~~~~~~
+treemap.c:115:8: error: ‘firstTreeMap’ defined but not used [-Werror=unused-function]
+ Pair * firstTreeMap(TreeMap * tree) {
+        ^~~~~~~~~~~~
+treemap.c:111:8: error: ‘upperBound’ defined but not used [-Werror=unused-function]
+ Pair * upperBound(TreeMap * tree, void* key) {
+        ^~~~~~~~~~
+treemap.c:74:6: error: ‘eraseTreeMap’ defined but not used [-Werror=unused-function]
+ void eraseTreeMap(TreeMap * tree, void* key){
+      ^~~~~~~~~~~~
+treemap.c:64:12: error: ‘minimum’ defined but not used [-Werror=unused-function]
+ TreeNode * minimum(TreeNode * x){
+            ^~~~~~~
+treemap.c:52:6: error: ‘insertTreeMap’ defined but not used [-Werror=unused-function]
+ void insertTreeMap(TreeMap * tree, void* key, void * value)
+      ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9ca525c
