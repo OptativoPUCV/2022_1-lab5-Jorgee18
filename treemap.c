@@ -129,7 +129,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
     else
     {
       if(tree->lower_than(aux->pair->key, key) == 1)
-        aux = aux->right;
+        aux = aux;
       else
       {
         tree->current = aux;
