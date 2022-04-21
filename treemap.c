@@ -177,7 +177,6 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
   
   variableAux = searchTreeMap(tree, key);
   variableAux2 = createTreeNode(varaiableAux->key, variableAux->value);
-  return variableAux2;
   
 
 }
@@ -200,9 +199,6 @@ void eraseTreeMap(TreeMap * tree, void* key){
     removeNode(tree, node);
 
 }
-
-
-
 
 Pair * searchTreeMap(TreeMap * tree, void* key) 
 {
