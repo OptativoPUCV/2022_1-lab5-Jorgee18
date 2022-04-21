@@ -80,8 +80,8 @@ void eraseTreeMap(TreeMap * tree, void* key){
 
 Pair * searchTreeMap(TreeMap * tree, void* key) 
 {
-  TreeNode* aux;
-  aux = tree->root;
+  //TreeNode* aux;
+  //aux = tree->root;
 
   return NULL;
 }

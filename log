@@ -112,3 +112,9 @@ treemap.c:83:13: error: variable ‘aux’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 52da7e3
+Thu Apr 21 17:34:46 UTC 2022: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  4|7
+total_score: 5/70
+89f44db
