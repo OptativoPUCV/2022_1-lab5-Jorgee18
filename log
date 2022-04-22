@@ -2374,3 +2374,8 @@ treemap.c:153:9: error: assignment makes pointer from integer without a cast [-W
 cc1: all warnings being treated as errors
 Compilation failed
 44aa37b
+Fri Apr 22 22:37:52 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+46941a4
