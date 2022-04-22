@@ -2238,3 +2238,14 @@ treemap.c:180:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 e268bf2
+Fri Apr 22 18:47:08 UTC 2022: 
+ treemap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:169:16: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return tree->current;
+            ~~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2841982
