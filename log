@@ -2132,3 +2132,59 @@ treemap.c:186:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 a733432
+Fri Apr 22 18:43:47 UTC 2022: 
+In file included from test.c:4:0:
+treemap.c: In function ‘minimum’:
+treemap.c:90:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c:92:3: error: ‘aux’ undeclared (first use in this function)
+   aux = x;
+   ^~~
+treemap.c:92:3: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c: In function ‘removeNode’:
+treemap.c:108:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c: At top level:
+treemap.c:124:6: error: redefinition of ‘removeNode’
+ void removeNode(TreeMap * tree, TreeNode* node) {
+      ^~~~~~~~~~
+treemap.c:105:6: note: previous definition of ‘removeNode’ was here
+ void removeNode(TreeMap * tree, TreeNode* node)
+      ^~~~~~~~~~
+treemap.c: In function ‘removeNode’:
+treemap.c:125:1: error: version control conflict marker in file
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+ ^~~~~~~
+treemap.c:125:9: error: invalid suffix "dae7e13a00bf080e3afefd5c4b3dc436b7bed1f" on integer constant
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:151:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c:153:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c:155:1: error: version control conflict marker in file
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+ ^~~~~~~
+treemap.c:155:9: error: invalid suffix "dae7e13a00bf080e3afefd5c4b3dc436b7bed1f" on integer constant
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+treemap.c: At top level:
+treemap.c:171:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c: In function ‘minimum’:
+treemap.c:103:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:186:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+6b67837
