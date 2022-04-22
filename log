@@ -1466,3 +1466,13 @@ Fri Apr 22 01:56:37 UTC 2022:
  tests:  11|6
 total_score: 15/70
 e2e43fe
+Fri Apr 22 02:01:50 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘minimum’:
+treemap.c:92:3: error: expected ‘;’ before ‘if’
+   if(x->left == NULL)
+   ^~
+Compilation failed
+84ec80d
