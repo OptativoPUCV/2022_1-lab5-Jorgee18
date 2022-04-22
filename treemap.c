@@ -119,7 +119,7 @@ void removeNode(TreeMap * tree, TreeNode* node)
       node->parent->left = NULL;
     }
   }
-  if(((node->left == NULL) && (node->right != NULL)) || ((node->left != NULL) && (node->right == NULL)) )
+  else if(((node->left == NULL) && (node->right != NULL)) || ((node->left != NULL) && (node->right == NULL)) )
   {
     if((node->left == NULL) && (node->right != NULL))
     {
