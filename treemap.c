@@ -180,13 +180,4 @@ Pair * firstTreeMap(TreeMap * tree)
 
 Pair * nextTreeMap(TreeMap * tree) 
 {
-  
-=======
-Pair * firstTreeMap(TreeMap * tree) {
-  return NULL;
-}
-
-Pair * nextTreeMap(TreeMap * tree) {
->>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
-  return NULL;
 }
