@@ -151,12 +151,14 @@ Pair * firstTreeMap(TreeMap * tree)
   aux = tree->root;
   while(aux->left != NULL)
   {
+    aux = aux->left;
     if(aux->left != NULL)
     {
       aux = aux->left;
       return aux->pair;
     }
   }
+  return NULL;
 }
 
 Pair * nextTreeMap(TreeMap * tree) 
