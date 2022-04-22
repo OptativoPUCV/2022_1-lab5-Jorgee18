@@ -1650,3 +1650,8 @@ treemap.c:152:27: error: ‘TreeMap {aka struct TreeMap}’ has no member named 
                            ^~
 Compilation failed
 37cd21f
+Fri Apr 22 02:50:38 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+5857cd0
