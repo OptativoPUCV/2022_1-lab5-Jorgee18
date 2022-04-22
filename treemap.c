@@ -88,7 +88,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
 TreeNode * minimum(TreeNode * x)
 {
   TreeNode* aux;
-  aux = x->left;
+  aux = x;
   if(x->left == NULL)
     return aux;
   
