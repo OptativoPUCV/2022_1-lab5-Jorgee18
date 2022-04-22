@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Thu Apr 21 17:11:49 UTC 2022: 
  treemap.c | 19 +++++++++++++++----
  1 file changed, 15 insertions(+), 4 deletions(-)
@@ -1728,3 +1729,290 @@ Fri Apr 22 03:08:36 UTC 2022:
  tests:  14|5
 total_score: 15/70
 4001ee5
+=======
+Thu Apr 21 13:08:02 HSP 2022: 
+test.c:6:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4f88c07
+Thu Apr 21 17:11:36 HSP 2022: 
+test.c:6:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+783dc79
+Thu Apr 21 17:21:35 HSP 2022: 
+test.c:6:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e092f8c
+Thu Apr 21 17:26:07 HSP 2022: 
+test.c:6:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0e195af
+Thu Apr 21 17:31:27 HSP 2022: 
+test.c:6:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a5acfe4
+Thu Apr 21 17:32:05 HSP 2022: 
+test.c:6:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+125f613
+Thu Apr 21 18:12:00 HSP 2022: 
+test.c:6:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b09c77d
+Thu Apr 21 19:15:54 HSP 2022: 
+ treemap.c | 85 +++++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 75 insertions(+), 10 deletions(-)
+test.c: In function 'createTreeMap':
+test.c:503:5: error: 'main' is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:503:5: error: 'main' defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8de66ac
+Thu Apr 21 19:29:38 HSP 2022: 
+test.c: In function 'createTreeMap':
+test.c:503:5: error: 'main' is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:503:5: error: 'main' defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8a05fd3
+Thu Apr 21 19:35:41 HSP 2022: 
+test.c: In function 'createTreeMap':
+test.c:503:5: error: 'main' is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:503:5: error: 'main' defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a0b4a07
+Thu Apr 21 19:35:48 HSP 2022: 
+test.c: In function 'createTreeMap':
+test.c:503:5: error: 'main' is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:503:5: error: 'main' defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9ae73d5
+Thu Apr 21 19:45:23 HSP 2022: 
+test.c: In function 'createTreeMap':
+test.c:503:5: error: 'main' is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:503:5: error: 'main' defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+38e0317
+Thu Apr 21 19:45:45 HSP 2022: 
+test.c: In function 'createTreeMap':
+test.c:503:5: error: 'main' is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:503:5: error: 'main' defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d6d436b
+Thu Apr 21 19:56:58 HSP 2022: 
+ treemap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+test.c:6:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0cdd34c
+>>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+Fri Apr 22 03:10:09 UTC 2022: 
+ treemap.c | Unmerged
+ treemap.c | 31 +++++++++++++++++++++++++++++++
+ 1 file changed, 31 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘minimum’:
+treemap.c:90:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c:92:3: error: ‘aux’ undeclared (first use in this function)
+   aux = x;
+   ^~~
+treemap.c:92:3: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c: In function ‘removeNode’:
+treemap.c:108:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c: At top level:
+treemap.c:124:6: error: redefinition of ‘removeNode’
+ void removeNode(TreeMap * tree, TreeNode* node) {
+      ^~~~~~~~~~
+treemap.c:105:6: note: previous definition of ‘removeNode’ was here
+ void removeNode(TreeMap * tree, TreeNode* node)
+      ^~~~~~~~~~
+treemap.c: In function ‘removeNode’:
+treemap.c:125:1: error: version control conflict marker in file
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+ ^~~~~~~
+treemap.c:125:9: error: invalid suffix "dae7e13a00bf080e3afefd5c4b3dc436b7bed1f" on integer constant
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:151:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c:153:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c:155:1: error: version control conflict marker in file
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+ ^~~~~~~
+treemap.c:155:9: error: invalid suffix "dae7e13a00bf080e3afefd5c4b3dc436b7bed1f" on integer constant
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+treemap.c: At top level:
+treemap.c:171:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:184:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c:190:9: error: invalid suffix "dae7e13a00bf080e3afefd5c4b3dc436b7bed1f" on integer constant
+ >>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test.c: In function ‘creaPalabra’:
+test.c:47:17: error: implicit declaration of function ‘_strdup’; did you mean ‘strdup’? [-Werror=implicit-function-declaration]
+     new->word = _strdup(word);
+                 ^~~~~~~
+                 strdup
+test.c:47:15: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+     new->word = _strdup(word);
+               ^
+test.c: In function ‘search_test3’:
+test.c:143:17: error: ‘msg’ undeclared (first use in this function)
+         sprintf(msg, "encuentra dato con clave %d",key);
+                 ^~~
+test.c: In function ‘search_test4’:
+test.c:164:17: error: ‘msg’ undeclared (first use in this function)
+         sprintf(msg, "retorna NULL: search(key=%d)",key);
+                 ^~~
+test.c: In function ‘insert_test1’:
+test.c:174:35: error: passing argument 2 of ‘creaPalabra’ makes pointer from integer without a cast [-Werror=int-conversion]
+     Palabra* p = creaPalabra(1273,_strdup("repetido"));
+                                   ^~~~~~~
+test.c:44:10: note: expected ‘char *’ but argument is of type ‘int’
+ Palabra* creaPalabra(int id, char* word){
+          ^~~~~~~~~~~
+test.c: In function ‘insert_test2’:
+test.c:190:34: error: passing argument 2 of ‘creaPalabra’ makes pointer from integer without a cast [-Werror=int-conversion]
+     Palabra* p = creaPalabra(900,_strdup("maicol"));
+                                  ^~~~~~~
+test.c:44:10: note: expected ‘char *’ but argument is of type ‘int’
+ Palabra* creaPalabra(int id, char* word){
+          ^~~~~~~~~~~
+test.c: In function ‘minimum_test’:
+test.c:233:17: error: ‘msg’ undeclared (first use in this function); did you mean ‘ok_msg’?
+         sprintf(msg,"minimum retorna nodo con clave %d (deberia retornar 1273)",*((int*) n->pair->key));
+                 ^~~
+                 ok_msg
+test.c: In function ‘ub_test1’:
+test.c:435:17: error: ‘msg’ undeclared (first use in this function)
+         sprintf(msg,"upperbound de 6980 retorna %d",((Palabra*)aux->value)->id);
+                 ^~~
+test.c: In function ‘ub_test2’:
+test.c:450:17: error: ‘msg’ undeclared (first use in this function)
+         sprintf(msg,"upperbound de %d retorna NULL",j);
+                 ^~~
+test.c: In function ‘ub_test3’:
+test.c:471:17: error: ‘msg’ undeclared (first use in this function)
+         sprintf(msg,"upperbound de %d retorna NULL",j);
+                 ^~~
+test.c: In function ‘ub_test4’:
+test.c:492:17: error: ‘msg’ undeclared (first use in this function)
+         sprintf(msg,"upperbound de %d retorna NULL",j);
+                 ^~~
+test.c: In function ‘nextTreeMap’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+In file included from test.c:4:0:
+treemap.c: In function ‘minimum’:
+treemap.c:103:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+treemap.c: In function ‘nextTreeMap’:
+test.c:606:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+91ffef2

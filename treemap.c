@@ -87,6 +87,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
 
 TreeNode * minimum(TreeNode * x)
 {
+<<<<<<< HEAD
   TreeNode* aux;
   aux = x;
   
@@ -104,6 +105,24 @@ TreeNode * minimum(TreeNode * x)
 void removeNode(TreeMap * tree, TreeNode* node) 
 {
   
+=======
+  /*
+  TreeNode* aux;
+  aux = x->parent;
+  if(x->left == NULL)
+    return aux;
+  
+  while(aux != NULL)
+  {
+    aux = aux->left;
+  }
+  return aux;*/
+  return NULL;
+
+}
+
+void removeNode(TreeMap * tree, TreeNode* node) {
+>>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
 
 }
 
@@ -129,7 +148,11 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
     else
     {
       if(tree->lower_than(aux->pair->key, key) == 1)
+<<<<<<< HEAD
         aux = aux->right;
+=======
+        aux = aux;
+>>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
       else
       {
         tree->current = aux;
@@ -145,6 +168,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
   return NULL;
 }
 
+<<<<<<< HEAD
 Pair * firstTreeMap(TreeMap * tree) 
 {
   TreeNode* aux;
@@ -157,5 +181,12 @@ Pair * firstTreeMap(TreeMap * tree)
 Pair * nextTreeMap(TreeMap * tree) 
 {
   
+=======
+Pair * firstTreeMap(TreeMap * tree) {
+  return NULL;
+}
+
+Pair * nextTreeMap(TreeMap * tree) {
+>>>>>>> 8dae7e13a00bf080e3afefd5c4b3dc436b7bed1f
   return NULL;
 }
