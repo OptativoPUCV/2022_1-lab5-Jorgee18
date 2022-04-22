@@ -148,13 +148,20 @@ Pair * upperBound(TreeMap * tree, void* key) {
 Pair * firstTreeMap(TreeMap * tree) 
 {
   TreeNode* aux;
+  int cont = 0;
   aux = tree->root;
-  aux = aux->left;
+
+  while(aux->left != NULL && cont < 1)
+  {
+    aux = aux->left;
+    cont++;
+  }
   return aux->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) 
 {
+  TreeNode* aux;
   
   return NULL;
 }
