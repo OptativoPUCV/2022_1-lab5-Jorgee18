@@ -171,11 +171,14 @@ Pair * upperBound(TreeMap * tree, void* key) {
 <<<<<<< HEAD
 Pair * firstTreeMap(TreeMap * tree) 
 {
-  TreeNode* aux;
-  aux = tree->root;
-  aux = aux->left;
+  tree->current = tree->root;
+  if(tree->current != NULL)
+  {
+    tree->current = minimum(tree->current);
+    return tree->current;
+  }
 
-  return aux->pair;
+  return NULL;
 }
 
 Pair * nextTreeMap(TreeMap * tree) 
