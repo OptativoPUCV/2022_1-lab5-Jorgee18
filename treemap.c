@@ -147,13 +147,13 @@ void removeNode(TreeMap * tree, TreeNode* node)
       } 
     }
   }
-  /*else
+  else
   {
     TreeNode* aux;
     aux = minimum(node->right);
     node->pair = aux->pair;
     removeNode(tree, aux);
-  }*/
+  }
 }
 
 
