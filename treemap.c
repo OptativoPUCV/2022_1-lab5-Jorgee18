@@ -151,7 +151,7 @@ Pair * firstTreeMap(TreeMap * tree)
   aux = tree->root;
   while(aux->left != NULL)
   {
-    return aux->pair
+    return aux->pair;
   }
   return NULL;
 }

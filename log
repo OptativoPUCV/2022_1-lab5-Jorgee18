@@ -1605,3 +1605,9 @@ treemap.c:155:3: error: expected ‘;’ before ‘}’ token
    ^
 Compilation failed
 c7f332c
+Fri Apr 22 02:30:35 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|5
+total_score: 15/70
+f9897d4
