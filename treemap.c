@@ -86,7 +86,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
     tree->current->right = variableAux2;
     variableAux2->parent = tree->current;
   }
-  
+  tree->current = variableAux2;
 }
 
 TreeNode * minimum(TreeNode * x)
