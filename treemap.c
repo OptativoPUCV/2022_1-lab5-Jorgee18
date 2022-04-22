@@ -152,7 +152,7 @@ void removeNode(TreeMap * tree, TreeNode* node)
   {
     TreeNode* aux;
     aux = minimum(node->right);
-    printf("%s", (char*) aux->pair->key);
+    printf("%i", *((int*) aux->pair->key) );
     //node->pair = aux->pair;
     //removeNode(tree, aux);
   }
