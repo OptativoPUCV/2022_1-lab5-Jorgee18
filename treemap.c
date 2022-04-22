@@ -96,7 +96,7 @@ TreeNode * minimum(TreeNode * x)
   {
     aux = aux->left;
   }
-  return aux->key;
+  return aux->left;
 
 }
 
