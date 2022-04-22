@@ -150,9 +150,8 @@ Pair * firstTreeMap(TreeMap * tree)
   TreeNode* aux;
   aux = tree->root;
   aux = aux->left;
-  if(tree->lower_than(aux->pair->key, tree->current->pair->key) == 1)
-    return aux->pair;
-  return tree->current->pair;
+
+  return aux->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) 
