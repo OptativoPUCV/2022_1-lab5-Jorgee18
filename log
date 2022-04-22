@@ -2395,3 +2395,14 @@ Fri Apr 22 22:43:15 UTC 2022:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 d66e3c5
+Fri Apr 22 22:45:02 UTC 2022: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘removeNode’:
+treemap.c:153:15: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+     TreeNode* aux;
+               ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+77750d7
