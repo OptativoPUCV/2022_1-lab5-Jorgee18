@@ -149,9 +149,14 @@ Pair * firstTreeMap(TreeMap * tree)
 {
   TreeNode* aux;
   aux = tree->root;
-  aux = aux->left;
-  
-  return aux->pair;
+  while(aux->left != NULL)
+  {
+    if(aux->left != NULL)
+    {
+      aux = aux->left;
+      return aux->pair;
+    }
+  }
 }
 
 Pair * nextTreeMap(TreeMap * tree) 
