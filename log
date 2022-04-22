@@ -2273,3 +2273,20 @@ Fri Apr 22 21:16:43 UTC 2022:
  tests:  21|3
 total_score: 35/70
 a534698
+Fri Apr 22 21:27:46 UTC 2022: 
+ treemap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:168:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+     if(tree->lower_than(key, aux->pair->key) == 1)
+     ^~
+treemap.c:170:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       aux = aux->left;
+       ^~~
+treemap.c:171:5: error: ‘else’ without a previous ‘if’
+     else
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bee669f

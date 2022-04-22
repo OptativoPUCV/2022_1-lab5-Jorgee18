@@ -158,12 +158,15 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 Pair * upperBound(TreeMap * tree, void* key)
 {
   TreeNode* aux;
+  TreeNode* mayorCercano = NULL;
+  
   aux = tree->root;
 
   while(aux != NULL)
   {
     tree->current = aux;
     if(tree->lower_than(key, aux->pair->key) == 1)
+      mayorCercano = aux;
       aux = aux->left;
     else
     {
@@ -178,7 +181,8 @@ Pair * upperBound(TreeMap * tree, void* key)
       }
     }
   }
-  return NULL;
+  
+  return mayorCercano->pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) 
