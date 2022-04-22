@@ -166,8 +166,10 @@ Pair * upperBound(TreeMap * tree, void* key)
   {
     tree->current = aux;
     if(tree->lower_than(key, aux->pair->key) == 1)
+    {
       mayorCercano = aux;
       aux = aux->left;
+    }
     else
     {
       if(tree->lower_than(aux->pair->key, key) == 1)
