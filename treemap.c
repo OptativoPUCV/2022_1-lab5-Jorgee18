@@ -92,7 +92,7 @@ TreeNode * minimum(TreeNode * x)
   if(x->left == NULL)
     return aux;
   
-  while(aux->left != NULL)
+  while(aux != NULL)
   {
     aux = aux->left;
   }
