@@ -2217,3 +2217,24 @@ treemap.c:181:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 9e65db1
+Fri Apr 22 18:46:13 UTC 2022: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c:121:6: error: redefinition of ‘removeNode’
+ void removeNode(TreeMap * tree, TreeNode* node) {
+      ^~~~~~~~~~
+treemap.c:104:6: note: previous definition of ‘removeNode’ was here
+ void removeNode(TreeMap * tree, TreeNode* node)
+      ^~~~~~~~~~
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:172:16: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return tree->current;
+            ~~~~^~~~~~~~~
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:180:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+e268bf2

@@ -115,7 +115,6 @@ void removeNode(TreeMap * tree, TreeNode* node)
     aux = aux->left;
   }
   return aux;*/
-  return NULL;
 
 }
 
