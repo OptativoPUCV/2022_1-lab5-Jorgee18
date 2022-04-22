@@ -153,7 +153,7 @@ Pair * firstTreeMap(TreeMap * tree)
   if(tree->root->left == NULL)
     return tree->root->right->pair;
   
-  return tree->current->pair;
+  return tree->root->left->pair;
   
   return aux->pair;
 }
