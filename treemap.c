@@ -158,7 +158,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 Pair * upperBound(TreeMap * tree, void* key)
 {
   TreeNode* aux;
-  TreeNode* mayorCercano = NULL;
+  Pair* mayorCercano = NULL;
   
   aux = tree->root;
 
@@ -167,7 +167,7 @@ Pair * upperBound(TreeMap * tree, void* key)
     tree->current = aux;
     if(tree->lower_than(key, aux->pair->key) == 1)
     {
-      mayorCercano = aux;
+      mayorCercano = aux->pair;
       aux = aux->left;
     }
     else
@@ -184,7 +184,7 @@ Pair * upperBound(TreeMap * tree, void* key)
     }
   }
   
-  return mayorCercano->pair;
+  return mayorCercano;
 }
 
 Pair * firstTreeMap(TreeMap * tree) 
