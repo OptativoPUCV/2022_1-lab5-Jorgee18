@@ -101,7 +101,9 @@ TreeNode * minimum(TreeNode * x)
 
 }
 
-void removeNode(TreeMap * tree, TreeNode* node) {
+void removeNode(TreeMap * tree, TreeNode* node) 
+{
+  
 
 }
 
@@ -143,10 +145,18 @@ Pair * upperBound(TreeMap * tree, void* key) {
   return NULL;
 }
 
-Pair * firstTreeMap(TreeMap * tree) {
-  return NULL;
+Pair * firstTreeMap(TreeMap * tree) 
+{
+  TreeNode* aux;
+  aux = tree->root;
+  if(aux->left == NULL)
+    return aux;
+  
+  return aux->left;
 }
 
-Pair * nextTreeMap(TreeMap * tree) {
+Pair * nextTreeMap(TreeMap * tree) 
+{
+  
   return NULL;
 }
