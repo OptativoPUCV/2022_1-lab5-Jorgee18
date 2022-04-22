@@ -2432,3 +2432,24 @@ Fri Apr 22 22:50:33 UTC 2022:
  1 file changed, 12 insertions(+), 7 deletions(-)
  tests:  0|0
 ba6a1ba
+Fri Apr 22 22:52:31 UTC 2022: 
+ treemap.c | 13 ++-----------
+ 1 file changed, 2 insertions(+), 11 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘removeNode’:
+treemap.c:151:3: error: "/*" within comment [-Werror=comment]
+   /*else
+    
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b1cfbfe
